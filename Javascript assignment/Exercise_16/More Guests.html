@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+            var guests = ["Sumaira", "Ali", "Sara"];
+            for(var i=0; i<guests.length; i++) {
+                console.log(guests[i]+", You are invited to dinner tonight.");
+            }
+            //guest who cannot come
+            console.log(guests[1]+" will not be able to come.");
+            //new person
+            guests[1]= "Momina";
+            for(var i=0; i<guests.length; i++) {
+                console.log(guests[i]+", You are invited to dinner tonight.");
+            }
+            // found bigger Table
+            console.log("\nGuys, I have found a bigger dinner table.");
+            //adding guest at the start
+            guests.unshift("Eeman");
+            //adding in the middle
+            guests.splice(2,0,"Sharia");
+            //adding at the end
+            guests.push("Asra");
+            //New Invitation
+            for(var i=0; i<guests.length; i++) {
+                console.log(guests[i]+", You are invited to dinner tonight.");
+            }
+
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
