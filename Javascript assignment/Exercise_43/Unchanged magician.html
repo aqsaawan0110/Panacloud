@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            var magicianNames = ["Ron","Joe","Mike","Josh","Kai"];
+            var copyMagicianNames = ["Ron","Joe","Mike","Josh","Kai"];
+            function show_magicians(magicianName){
+                console.log(magicianName);
+            }
+            
+            function make_great(names){
+                
+                for (var i=0; i<names.length; i++){
+                    names[i]=names[i]+" the Great.";
+
+                }
+                return names;
+            }
+            var newMagicianNames = make_great(copyMagicianNames);
+            show_magicians(magicianNames);
+            show_magicians(newMagicianNames);
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
