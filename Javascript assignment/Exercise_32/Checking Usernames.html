@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+          var current_users= ["Hira", "Aqsa","Asra","Sharia","Ibrahim"];
+          var new_users=["Eeman","Momina","AQSA"];
+          var check= true;
+
+          for (var i=0; i<new_users.length; i++){
+            for (var j=0; j<current_users.length; j++){
+                if(new_users[i].toLowerCase() === current_users[j].toLowerCase()){
+                    check = false;
+                }
+            }
+            if (!check){
+                console.log("User name "+new_users[i]+ " is taken. Plaese enter a new user name!");
+
+            }
+            else{
+                
+                console.log("User name: "+new_users[i]+ " is available.");
+            }
+
+            }         
+         
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
