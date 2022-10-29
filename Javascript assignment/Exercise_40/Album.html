@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            function make_album(artistName,albumTitle,numberOfTracks=0){
+                const info= new Object();
+                info.artistName=artistName;
+                info.albumTitle=albumTitle;
+                info.numberOfTracks=numberOfTracks;
+                return info;
+            }
+            var a= make_album("BTS","Love Yourself");
+            var b= make_album("Blackpink","Pink Venom");
+            var c= make_album("Twice","Twicetagram",13);
+           
+            console.log("Artist Name: "+a.artistName+"\nAlbum Title: "+a.albumTitle);
+            console.log("Artist Name: "+b.artistName+"\nAlbum Title: "+b.albumTitle);
+            console.log("Artist Name: "+c.artistName+"\nAlbum Title: "+c.albumTitle+"\nNumber of tracks: "+c.numberOfTracks);
+           
+            
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
