@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+                       
+            function carInfo(manufecturer,modelName){
+                let car = {};
+                car.manufacturer=manufecturer;
+                car.modelName=modelName;
+                for (var i=2; i<arguments.length; i+=2){
+                     Object.defineProperty(car,arguments[i],{value:arguments[i+1]});
+                }
+               
+               return car;
+            }
+            var color;
+            var cars= carInfo("Audi","Audi A7 Sportback","color","white","engine",1800);
+            console.log(cars);
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
